@@ -9,7 +9,7 @@ Service to store CO2 Readings from various sensors and Provide metrics.
   <li>PostgreSQL</li>
   <li>Junit 5</li>
   <li>Rest Assured - for BDD style API Testing</li>
-  <li>Testcontainers - to spin up postgres instant for Integrations tests</li>
+  <li>Testcontainers - to spin up postgres instance for Integrations tests</li>
 </ul>
 
 ## Dependencies
@@ -38,7 +38,7 @@ Service to store CO2 Readings from various sensors and Provide metrics.
 * `GET` /sensors/{sensorId} - get a sensor details with status
 * `GET` /sensors/{sensorId}/metrics - get a sensor metrics for past 30 days
 
-## How to start service locally in intellij directly using Main method
+## How to start service locally in IDE directly using Main method
 <ul>
   <li><b>docker compose up postgres</b> - to start postgres instance</li>
   <li>Now just run/debug main method inside of Co2AnalyzerApplication.</li>
@@ -46,9 +46,9 @@ Service to store CO2 Readings from various sensors and Provide metrics.
 
 ## How to start service locally using Docker
 <ul>
-  <li>**./mvnw clean package** - create a executable jar file</li>
+  <li><b>./mvnw clean package</b> - create a executable jar file</li>
   <li><b>docker-compose build --no-cache</b> - build/rebuild the docker image</li>
-  <li>**docker-compose up** - starts the service locally (including postgres dependency)</li>
+  <li><b>docker-compose up</b> - starts the service locally (including postgres dependency)</li>
  </ul>
 
 ## Future improvements
