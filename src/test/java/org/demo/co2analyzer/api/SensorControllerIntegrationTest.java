@@ -112,6 +112,7 @@ class SensorControllerIntegrationTest {
 
     @Test
     @Sql(scripts = {"/sql/insert-test-data.sql", "/sql/insert-measurement-test-data.sql"}, executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+    @Sql(scripts = {"/sql/delete-test-data.sql"}, executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
     public void testShouldGetMetrics() {
         //@formatter:off
         given()
