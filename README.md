@@ -51,5 +51,10 @@ Service to store CO2 Readings from various sensors and Provide metrics.
   <li><b>docker compose up</b> - starts the service locally (including postgres dependency)</li>
  </ul>
 
+## Clean up docker containers
+<ul>
+  <li><b>docker compose down</b> - shuts down the running docker containers from this project</li>
+</ul>
+
 ## Future improvements
 Extend tests with exceptions, and also do more request validations when adding measurement.
