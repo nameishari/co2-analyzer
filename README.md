@@ -47,8 +47,8 @@ Service to store CO2 Readings from various sensors and Provide metrics.
 ## How to start service locally using Docker
 <ul>
   <li><b>./mvnw clean package</b> - create a executable jar file</li>
-  <li><b>docker-compose build --no-cache</b> - build/rebuild the docker image</li>
-  <li><b>docker-compose up</b> - starts the service locally (including postgres dependency)</li>
+  <li><b>docker compose build --no-cache</b> - build/rebuild the docker image</li>
+  <li><b>docker compose up</b> - starts the service locally (including postgres dependency)</li>
  </ul>
 
 ## Future improvements
