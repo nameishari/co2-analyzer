@@ -32,7 +32,7 @@ Service to store CO2 Readings from various sensors and Provide metrics.
   ```json
     {
       "reading": 2000,
-      "time": 100
+      "time": "2019-02-01T18:55:47+00:00"
     }
   ```
 * `GET` /sensors/{sensorId} - get a sensor details with status
